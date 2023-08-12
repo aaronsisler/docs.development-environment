@@ -1,8 +1,22 @@
-# notes.development-environment
+# docs.development-environment
+
+## What A Section Should Contain
+
+- Header
+- Language Versioner
+  - What manages the version of the language "versioner" e.g. Brew manages NVM, SDK Man is self updating.
+- Language Version
+  - What manages the version of language e.g. NVM for NodeJs, SDK Man for Java, etc.
+- Install & Build Tool
+  - What install/build tool is used per language e.g. gradle for Java, yarn for NodeJs
 
 ## Java
 
-(SDK Man)[https://sdkman.io/] is the tool of choice.
+| Language Versioner | Language Version | Install & Build Tool |
+| ------------------ | ---------------- | -------------------- |
+| Self managing      | SDK Man          | gradle               |
+
+### SDK Man
 
 - Install an SDK or Library:
 
@@ -30,12 +44,16 @@ sdk current gradle
 sdk upgrade
 ```
 
-## Node
+## NodeJs
 
-NVM is used to manage the current version of Node.
-NVM is managed by Brew.
+| Language Versioner | Language Version | Install & Build Tool |
+| ------------------ | ---------------- | -------------------- |
+| Brew               | NVM              | ryan                 |
+
+### NVM
 
 ## Python
 
-Python versions are managed by Brew.
-pipenv is used to manage the version that is used in a project.
+| Language Versioner | Language Version | Install & Build Tool |
+| ------------------ | ---------------- | -------------------- |
+| Brew               | Brew and alias   | pipenv               |
