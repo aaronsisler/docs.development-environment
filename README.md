@@ -1,5 +1,7 @@
 # docs.development-environment
 
+## Purpose Of This Repo
+
 ## What A Section Should Contain
 
 - Header
@@ -12,9 +14,9 @@
 
 ## Java
 
-| Language Versioner | Language Version | Install & Build Tool |
-| ------------------ | ---------------- | -------------------- |
-| Self managing      | SDK Man          | gradle               |
+| Language Versioner | .zshrc Needed | Language Version | Alias Needed | Install & Build Tool |
+| ------------------ | ------------- | ---------------- | ------------ | -------------------- |
+| Self managing      | Yes           | SDK Man          | No           | gradle               |
 
 ### SDK Man
 
@@ -44,16 +46,85 @@ sdk current gradle
 sdk upgrade
 ```
 
-## NodeJs
+## Node.js
 
-| Language Versioner | Language Version | Install & Build Tool |
-| ------------------ | ---------------- | -------------------- |
-| Brew               | NVM              | ryan                 |
+| Language Versioner | .zshrc Needed | Language Version | Alias Neede | Install & Build Tool |
+| ------------------ | ------------- | ---------------- | ----------- | -------------------- |
+| Brew and .zshrc    | Yes           | NVM              | No          | yarn                 |
 
 ### NVM
 
+- List out what versions of Node.js are available from NVM
+
+```bash
+nvm list
+```
+
+- List the current version of Node.js that is set for use
+
+```bash
+nvm current
+```
+
+- Update current node version to latest i.e. Node released some patches
+
+```bash
+nvm install node
+```
+
 ## Python
 
-| Language Versioner | Language Version | Install & Build Tool |
-| ------------------ | ---------------- | -------------------- |
-| Brew               | Brew and alias   | pipenv               |
+| Language Versioner | .zshrc Needed | Language Version | Alias Neede | Install & Build Tool |
+| ------------------ | ------------- | ---------------- | ----------- | -------------------- |
+| Brew               | No            | Brew             | Yes         | pipenv               |
+
+## TODO
+
+### File names to look into what tech they are from next-enterprise
+
+- .all-contributorsrc
+  - npm dev package that puts information into this file
+- .eslintrc.js
+  - Has some nice plugins and auto sorting/saving
+  - .eslintignore
+    - Folders to ignore i.e. node_modules, etc.
+- .pre-commit-config.yaml
+  - Requires the brew package `pre-commit`
+  - References a repo that seems to have the "default" rules
+  - https://pre-commit.com/
+- git-conventional-commits.yaml
+- .releaserc
+
+  - Uses npm semantic-release
+  - This is used in tandem with the git conventional commits plugin to figure out how to version the release given what was added/removed
+  - https://semantic-release.gitbook.io/semantic-release/usage/installation
+
+- env.mjs
+  - @t3-oss/env-nextjs
+  - createEnv
+- instrumentation.ts
+  - @vercel/otel
+  - https://nextjs.org/docs/pages/building-your-application/optimizing/open-telemetry
+- jest.config.ts
+- next-env.d.ts
+  - https://nextjs.org/docs/basic-features/typescript
+- next.config.mjs
+  - https://nextjs.org/docs/pages/api-reference/next-config-js
+- playwright.config.ts
+- postcss.config.js
+- prettier.config.ts
+  - prettierignore
+- renovate.json
+- reset.d.ts
+- tailwind.config.js
+- tsconfig.json
+- storybook
+
+### Things to understand
+
+- .mjs file types
+  - This is related to the import/export .mjs compared to require/module.exports .cjs
+- Folder and file structure
+  - https://nextjs.org/docs/getting-started/project-structure
+  - https://dev.to/vadorequest/a-2021-guide-about-structuring-your-next-js-project-in-a-flexible-and-efficient-way-472
+- What the GHA files are doing
