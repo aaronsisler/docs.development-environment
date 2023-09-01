@@ -29,3 +29,9 @@ nvm install node
 ```bash
 nvm install v18
 ```
+
+- Use a installed version of Node
+
+```bash
+nvm use 18
+```
