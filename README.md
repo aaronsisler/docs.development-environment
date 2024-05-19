@@ -14,41 +14,8 @@
 
 ## Languages
 
+- [Java](./languages/java.md)
 - [Node.js](./languages/node-js.md)
-
-## Java
-
-| Language Versioner | .zshrc Needed | Language Version | Alias Needed | Install & Build Tool |
-| ------------------ | ------------- | ---------------- | ------------ | -------------------- |
-| Self managing      | Yes           | SDK Man          | No           | gradle               |
-
-### SDK Man
-
-- Install an SDK or Library:
-
-```bash
-sdk install java
-```
-
-```bash
-sdk install gradle
-```
-
-- Check the latest version we are using:
-
-```bash
-sdk current java
-```
-
-```bash
-sdk current gradle
-```
-
-- Upgrade all versions of the SDKs that are managed and installed by SDK Man:
-
-```bash
-sdk upgrade
-```
 
 ## Python
 

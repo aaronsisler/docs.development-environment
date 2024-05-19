@@ -8,4 +8,4 @@ Current maximum Node.js that is supported by AWS is Node.js 18.
 
 ## Docker/EKS
 
-Micronaut
+Spring Boot

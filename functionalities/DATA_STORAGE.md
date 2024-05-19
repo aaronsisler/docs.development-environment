@@ -2,11 +2,11 @@
 
 ## NoSQL Data
 
-DynamoDb
+DynamoDB
 
 ## Relational Data
 
-MySQL
+Postgres
 
 ## Document Storage
 

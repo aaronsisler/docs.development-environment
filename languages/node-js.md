@@ -1,8 +1,8 @@
 # Node.js
 
-| Language Versioner | .zshrc Needed | Language Version | Alias Neede | Install & Build Tool |
-| ------------------ | ------------- | ---------------- | ----------- | -------------------- |
-| Brew and .zshrc    | Yes           | NVM              | No          | yarn                 |
+| Language Versioner | .zshrc Needed | Language Version | Alias Needed | Install & Build Tool |
+| ------------------ | ------------- | ---------------- | ------------ | -------------------- |
+| Brew and .zshrc    | Yes           | NVM              | No           | yarn                 |
 
 ## NVM
 
