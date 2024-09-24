@@ -6,10 +6,22 @@
 
 ## SDK Man
 
-- List out what versions of software is installed from NVM
+- List out what versions of software is installed on machine from SDK Man
 
 ```bash
 sdk current
+```
+
+- List out all versions of specific software that are available from SDK Man
+
+```bash
+sdk list java
+```
+
+- List out all versions of all software that are available from SDK Man
+
+```bash
+sdk list
 ```
 
 - Update current software version to latest i.e. Java released some patches
