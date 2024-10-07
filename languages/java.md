@@ -24,16 +24,16 @@ sdk list java
 sdk list
 ```
 
+- Install a different version of Java then the latest
+
+```bash
+sdk install java x.y.z-amzn
+```
+
 - Update current software version to latest i.e. Java released some patches
 
 ```bash
 sdk upgrade java
-```
-
-- Install a different version of Java then the latest
-
-```bash
-TBD
 ```
 
 - Use a installed version of Java
