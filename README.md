@@ -16,12 +16,7 @@
 
 - [Java](./languages/java.md)
 - [Node.js](./languages/node-js.md)
-
-## Python
-
-| Language Versioner | .zshrc Needed | Language Version | Alias Neede | Install & Build Tool |
-| ------------------ | ------------- | ---------------- | ----------- | -------------------- |
-| Brew               | No            | Brew             | Yes         | pipenv               |
+- [Python](./languages/python.md)
 
 ## TODO
 

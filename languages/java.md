@@ -36,7 +36,7 @@ sdk install java x.y.z-amzn
 sdk upgrade java
 ```
 
-- Use a installed version of Java
+- Use an installed version of Java
 
 ```bash
 TBD
