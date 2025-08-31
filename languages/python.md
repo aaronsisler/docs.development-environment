@@ -1,10 +1,10 @@
 # Python
 
-We are using a combination of Brew installed Python for the global level of Python tasks i.e. anywhere on the Mac not specific to a project/repo. For project/repo specific install and build process, refer to the [Conda](#conda) section.
+We are using Brew installed Python for the global level of Python tasks i.e. anywhere on the Mac not specific to a project/repo. For project/repo specific install and build process, refer to the [Conda](#conda) section.
 
 | Language Versioner | .zshrc Needed | Language Version | Alias Needed | Install & Build Tool |
 | ------------------ | ------------- | ---------------- | ------------ | -------------------- |
-| Brew and .zshrc    | Yes           | Brew             | Yes          | N/A                  |
+| Brew               | No            | Brew             | No           | N/A                  |
 
 ## Globally Available Python
 
@@ -18,10 +18,10 @@ brew search python@3.
 
 ### List the current version of Python that is set for use
 
-- Outside of a Conda env, this is set with an alias in the .zshrc file and Brew Python dependencies
+- Outside of a Conda env, we are not using an alias and require the full `python3` naming convention. This is because the .zshrc file's alias and the conda environment's alias clash.
 
 ```bash
-python --version
+python3 --version
 ```
 
 ### Update current Python version to latest i.e. Python released some patches
@@ -34,20 +34,6 @@ brew upgrade
 
 ```bash
 brew install python@3.XX
-```
-
-Complete the below section afterwards
-
-### Use or switch an installed version of Python
-
-```bash
-openzshrc
-```
-
-Change the alias for pip and Python to point to the version you are wanting
-
-```bash
-sourcezshrc
 ```
 
 ## Conda
@@ -72,11 +58,22 @@ conda --version
 conda search python
 ```
 
+### nvironments
+
 ### Create and activate a Conda environment
 
+Using aliases
+
 ```bash
-conda create -n your-env-name python=3.X
-conda activate your-env-name
+condac
+condaa
+```
+
+Using the commands behind the above aliases
+
+```bash
+conda create -p venv/ python=3.13
+conda activate venv/
 ```
 
 ### Updating (read upgrading minor version) python within an active Conda environment
