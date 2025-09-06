@@ -58,7 +58,7 @@ conda --version
 conda search python
 ```
 
-### nvironments
+### Environments
 
 ### Create and activate a Conda environment
 
@@ -74,6 +74,20 @@ Using the commands behind the above aliases
 ```bash
 conda create -p venv/ python=3.13
 conda activate venv/
+```
+
+### Creating a replicable environment
+
+Saving the dependencies of an activated environment
+
+```bash
+conda env export --prefix ./venv --from-history > environment.yml
+```
+
+Instantiating an environment from an environment file
+
+```bash
+conda env create --prefix ./venv -f environment.yml
 ```
 
 ### Updating (read upgrading minor version) python within an active Conda environment
