@@ -81,7 +81,7 @@ conda activate venv/
 Saving the dependencies of an activated environment
 
 ```bash
-conda env export --prefix ./venv --from-history > environment.yml
+conda env export --prefix ./venv > environment.yml
 ```
 
 Instantiating an environment from an environment file
