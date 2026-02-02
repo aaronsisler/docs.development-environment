@@ -6,10 +6,16 @@
 
 ## NVM
 
-- List out what versions of Node.js are available from NVM
+- List out the versions of Node.js that are available from your local NVM
 
 ```bash
 nvm list
+```
+
+- List out all versions of Node.js that are available from NVM
+
+```bash
+nvm list-remote
 ```
 
 - List the current version of Node.js that is set for use
