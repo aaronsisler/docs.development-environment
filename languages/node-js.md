@@ -6,25 +6,25 @@
 
 ## NVM
 
-- List out the versions of Node.js that are available from your local NVM
+- List out the versions of Node that are available from your local NVM
 
 ```bash
 nvm list
 ```
 
-- List out all versions of Node.js that are available from NVM
+- List out all versions of Node that are available from NVM
 
 ```bash
 nvm list-remote
 ```
 
-- List the current version of Node.js that is set for use
+- List the current version of Node that is set for use
 
 ```bash
 nvm current
 ```
 
-- Update current node version to latest i.e. Node released some patches
+- Update current Node version to latest i.e. Node released some patches
 
 ```bash
 nvm install node
@@ -36,8 +36,14 @@ nvm install node
 nvm install v18
 ```
 
-- Use an installed version of Node
+- Use an installed version of Node in the current bash session
 
 ```bash
 nvm use 18
+```
+
+- Update default Node version upon a new bash session opening
+
+```bash
+nvm alias default 24
 ```
